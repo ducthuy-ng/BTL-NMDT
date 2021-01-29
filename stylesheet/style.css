@@ -131,7 +131,6 @@ a, a:hover, a:focus {
   margin-left: 7vw;
   width: 100%;
 }
-
 .overlay {
     display: none;
     position: absolute;
@@ -142,7 +141,6 @@ a, a:hover, a:focus {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-
 @media (max-width: 768px) {
     body {
       font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -170,4 +168,60 @@ a, a:hover, a:focus {
       display: block;
       opacity: 1;
     }
+    #right{
+      margin-right:0;
+    }
 }
+/*phần mới thêm*/
+.preface{
+  border-left: red;
+  font-style: italic;
+}
+.heder{
+  color: gray;
+  background-color:rgba(52, 58, 64, 0.75);
+  margin-left;
+}
+.content2{
+  color: gray;
+  background-color: rgba(52, 58, 64, 0.75);
+}
+.img1{
+  padding-top:160px;
+  width:100px;
+  height:400px;
+  background: lavender;
+}
+.img2{
+  padding-top:30px;
+  width:100px;
+  height:30 0px;
+  background: lavender;
+}
+.img3{
+  padding-top:10px;
+  width:100px;
+  height:30 0px;
+  background: lavender;
+}
+.text{
+  position:relative;
+  color: gray;
+  background-color: rgba(52, 58, 64, 0.75);
+  border:50px;
+  width:100%;
+}
+#right{
+  width: 100%;
+  min-height: auto;
+  border: 1px solid #CDCDCD;
+}
+.right2{
+  width:15%;
+  min-height: auto;
+}
+.cmtimg{
+  text-align: center;
+  padding:15px;
+}
+
