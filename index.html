@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About 3D Printing</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+  <link href="stylesheet\style.css" rel="stylesheet">
+</head>
+
+<body onload="documentLoaded()">
+  <header class="trumbotron bg-color">
+    <div class="container py-5 text-center text-light">
+        <h1 class="display-1 mb-0">In ấn 3D</h1>
+        <p class="mb-0"><i>Tất tần tật về công nghệ của tương lai này</i></p>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <div id="top_navbar" class="py-2 px-3 shadow bg-white">
+      <div class="left--controller">
+        <a id="sidebarTogglerShow" class="sidebar--toggler" href="#">
+          <i class="fas fa-list-ol"></i>
+          <span class="py-2 px-3">Mục lục</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <nav id="sidebar" class="aside--show shadow">
+        <div id="sidebarHeader" class="sidebar--header p-2">
+          <a id="sidebarTogglerHide" class="sidebar--toggler p-1" href="#">
+            <i class="fas fa-arrow-left"></i>
+            <span class="py-2">Nội dung</span>
+          </a>
+        </div>
+        <hr />
+
+        <ul class="list-unstyled components sidebar--body pt-3">
+          <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                Công nghệ in 3D
+              </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="history.html">Lịch sử phát triển</a>
+                    </li>
+                    <li>
+                        <a href="#">Ưu nhược điểm</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nguyên lý hoạt động</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Máy in - phần mềm</a>
+                    </li>
+                    <li>
+                        <a href="#">Vật liệu - quy trình</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ứng dụng</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Trong sản xuất (Ứng dụng lớn nhất)</a>
+                    </li>
+                    <li>
+                        <a href="#">Trong y tế</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thành tựu</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Về y học</a>
+                    </li>
+                    <li>
+                        <a href="#">Về kiến trúc</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#">Công nghệ quét quang học 3D </a>
+            </li>
+        </ul>
+      </nav>
+
+      <article id="main_article" class="p-3 article--right">
+        <h1>Giới thiệu</h1>
+        <span>Đây là phần nội dung chính<br />
+          Quá trình in 3D, còn được gọi là quy trình gia công (bù đắp),
+          bao gồm lấy mô hình ba chiều và làm cho nó sẵn sàng để in.
+          Đây là một quá trình nhiều bước bắt đầu bằng một hình thức đặc biệt của mô hình
+          và phần mềm để chia nhỏ mô hình thành các đường đùn nhựa mà máy in có thể sử dụng để tạo đối tượng.
+        </span>
+      </article>
+
+      <div id="backOverlay" class="overlay"></div>
+
+    </div>
+
+
+  </main>
+
+</body>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="js\main.js"></script>
+</html>
