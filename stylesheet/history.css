@@ -181,15 +181,10 @@
 #main_article a {
   color: #6c6d6d;
   text-decoration: none;
-  text-transform: uppercase;
-  display: block;
   letter-spacing: 0.3em;
-  font-size: 0.6em;
+  font-size: 1em;
   font-weight: 400;
   background: #252727;
-  padding: 0.3rem 1rem;
-  margin: 1.9rem 0 0 0;
-  float: right;
 }
 #main_article a:hover {
   color: white;
@@ -278,4 +273,9 @@
   width: 11px;
   content: "";
   top: 5px;
+}
+.timeline .event img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
