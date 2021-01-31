@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>About 3D Printing</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link href="fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet">
+  <link href="stylesheet\style.css" rel="stylesheet">
+  <link href="stylesheet\history.css" rel="stylesheet">
+</head>
+
+<body onload="documentLoaded()">
+  <header class="trumbotron bg-color">
+    <div class="container py-5 text-center text-light">
+        <h1 class="display-1 mb-0">In ấn 3D</h1>
+        <p class="mb-0"><i>Tất tần tật về công nghệ của tương lai này</i></p>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <div id="top_navbar" class="py-2 px-3 shadow bg-white">
+      <div class="left--controller">
+        <a id="sidebarTogglerShow" class="sidebar--toggler" href="#">
+          <i class="fas fa-list-ol"></i>
+          <span class="py-2 px-3">Mục lục</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <nav id="sidebar" class="aside--show shadow">
+        <div id="sidebarHeader" class="sidebar--header p-2">
+          <a id="sidebarTogglerHide" class="sidebar--toggler p-1" href="#">
+            <i class="fas fa-arrow-left"></i>
+            <span class="py-2">Nội dung</span>
+          </a>
+        </div>
+        <hr />
+
+        <ul class="list-unstyled components sidebar--body pt-3">
+          <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                Công nghệ in 3D
+              </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="overview.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="history.html">Lịch sử phát triển</a>
+                    </li>
+                    <li>
+                        <a href="ad&disad.html">Ưu nhược điểm</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nguyên lý hoạt động</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="printer.html">Máy in - phần mềm</a>
+                    </li>
+                    <li>
+                        <a href="material&pr.html">Vật liệu - quy trình</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ứng dụng</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Trong sản xuất (Ứng dụng lớn nhất)</a>
+                    </li>
+                    <li>
+                        <a href="#">Trong y tế</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thành tựu</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Về y học</a>
+                    </li>
+                    <li>
+                        <a href="#">Về kiến trúc</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#">Công nghệ quét quang học 3D </a>
+            </li>
+        </ul>
+      </nav>
+      <article id="main_article" class="p-3 article--right">
+        <h1>Máy in và phần mềm in 3D</h1>
+        <span class="preface">
+          <b>Nguyên lý hoạt động:</b>
+          Một đối tượng được tạo thành bằng phần mềm thiết kế hỗ trợ máy tính (CAD). Đối tượng được xuất ở định dạng tệp có chứa Ngôn ngữ chuẩn Tessellation(STL) để xác định đối tượng 3D có bề mặt và đỉnh tam giác (được gọi là tệp .stl).Tệp .stl kết quả được chia hoặc cắt thành các lớp và tệp chạy máy được tạo (gọi là tệp .gcode) bằng .Tệp này chứa các path để kiểm soát các trục, hướng di chuyển, nhiệt độ của đầu đùn, .... Ngoài ra, mỗi lớp được xây dựng như một bản đồ của các đường di chuyển (đường dẫn cho sợi nhựa ép đùn) để điền vào phác thảo đối tượng và bên trong.
+        </span>
+          <h2 class="heder"><b>1.Máy in</b></h2>
+          <p class="content2">Máy in 3D đang ngày càng phát triển và chứng tỏ được sự hữu ích trong ngành công nghiệp cũng như đời sống thường ngày. Và để tận dụng được tối đa khả năng của máy in, bạn phải nắm rõ những đặc điểm cũng như ưu – nhược điểm của từng loại máy.</p>
+          <p class="content2">Nếu phân loại theo kết cấu chuyển động thì hiện nay phổ biến với 3 loại máy in 3D: Cartesian, Delta, và Polar.</p>
+          <h3 class="heder">Cartesian</h3>
+          <p class="content2">Là các máy in 3D di chuyển đầu đùn nhựa nhờ các chuyển động theo phương X, Y, Z trong hệ tọa độ Cartesian. Đại diện tiêu biểu dòng máy in 3D mã nguồn mở loại Cartesian chính là Prusa i3 hay Mendel.</p>
+          <a target=" " href="C.jpeg">
+          <img src="C.jpeg"  width="300px" height="300px">
+          </a>
+          <p class="content2">Ưu điểm:</p>
+          <ul>
+            <li class="content2">Lắp ráp, căn chỉnh và bảo dưỡng dễ dàng</li>
+            <li class="content2">Cộng đồng mã nguồn mờ lớn</li>
+            <li class="content2">Phù hợp với người mới bắt đầu làm quen công nghệ in 3D</li>
+          </ul>
+          <p class="content2">Nhược điểm:</p>
+          <ul>
+            <li class="content2">Khối lượng các cơ cấu đi động lớn, nên tốc độ in không cao và gây ồn</li>
+            <li class="content2">Khi hoạt động máy thường bị rung và do vậy làm giảm độ chính xác</li>
+            <li class="content2">Kích thước ngang lớn, thường bị hạn chế chiều cao vật in</li>
+           </ul> 
+           <br>
+           <h3 class="heder">Delta</h3>
+           <p class="content2">Là các máy in 3D di chuyển đầu đùn nhựa theo nguyên lý của robot delta (robot song song). Đại diện tiêu biểu cho dòng máy in mã nguồn mở dạng Delta là Delta robot 3D printer (Kossel).</p>
+           <img src="c.jpeg">
+           <p class="content2">Ưu điểm:</p>
+           <ul>
+            <li class="content2">Khối lượng các cơ cấu di động nhỏ và một phần di chuyển theo các trục thẳng đứng/li>
+            <li class="content2">Hoạt động êm, ít rung, tốc độ cao và chính xác</li>
+            <li class="content2">Có thể in được vật in có chiều cao lớn</li>
+            <li class="content2">Bàn nhiệt (nơi đặt vật in) không di chuyển trong suốt quá trình in nên vật in được giữ chắc chắn hơn</li>
+            <li class="content2">Khung bệ chắc chắn</li>
+           </ul>
+           <p class="content2">Nhược điểm:</p>
+           <ul>
+            <li class="content2">Lắp ráp, căn chỉnh máy hơi phức tạp (tuy nhiên khi đã thạo rồi thì rất dễ)</li>
+            <li class="content2">Chiều cao của máy lớn (thường tới 60-70 cm)</li>
+            <li class="content2">Thường đắt hơn một chút so với máy dạng Cartesian</li>
+           </ul>
+           <h3 class="heder">Polar</h3>
+            <a target="" herf="polar-3d.gif">
+              <img src="polar-3d.gif">
+            </a>
+            <p class="content2">Loại máy in 3D này mới và ít phổ biến hơn hai loại trên. Đầu đùn nhựa di chuyển theo nguyên lý của tọa độ cực.</p>
+            <p class="content2">Ưu điểm</p>
+            <ul>
+              <li class="content2">Kiểu dáng mới</li>
+              <li class="content2">Máy hoạt động ít bị rung lắc như kiểu Cartesian</li>
+            </ul>  
+            <p class="content2">Nhược điểm</p>
+            <ul>
+              <li class="content2">Kích thước vật in có thể lớn</li>
+              <li class="content2">Momen quán tính của bàn nhiệt lớn</li>
+              <li class="content2">Tốc độ in không cao</li>
+              <li class="content2">Lắp ráp và căn chỉnh máy khó</li>
+              <li class="content2">Giá thành cao</li>
+            </ul>  
+          <h2 class="heder"><b>2.Phần mềm</b></h2>
+          <h4 class="content2">a)Phần mềm giao tiếp với máy in</h4>
+            <p class="content2">Để giao tiếp với các máy in 3D cần phải thông qua phần mềm hỗ trợ. Đây là công cụ cho phép người dùng thông qua tương tác đồ họa để thiết lập các thông số: vị trí, tốc độ in, nhiệt độ, thời gian, mật độ,… Tất cả những thông số này sẽ quyết định đến chất lượng sản phẩm, thời gian thực hiện quá trình in 3D.</p>
+            <p class="content2">Sau một loạt tất cả những thiết lập người dùng có thể tạo ra code để nạp trực tiếp vào máy in 3D. Sản phẩm được tạo ra sẽ phản ánh tất cả những gì người dùng thiết lập trên phần mềm</p>
+          <h4 class="content2">b)Phần mềm thiết kế ra mô hình 3D</h4>
+            <p class="content2">Hầu như tất cả các phần mềm thiết kế mô hình 3D dùng trong cơ khí hoàn toàn đáp ứng được công việc này, chỉ cần có thể xuất ra file STL là có thể sử dụng được. Ví dụ: SolidWork, Inventor, NX, SketchUp,…</p>
+            <p class="content2">Có rất nhiều các phần mềm hiện đang được sử dụng, bao gồm cả có phí và miễn phí. Chúng tôi sẽ liệt kê ra tất cả những phần mềm hỗ trợ quá trình in 3D đồng thời đưa ra một số lời khuyên về các phần mềm nên dùng và nêu ra một số đặc điểm của chúng</p>
+          <table style="width:80%">
+            <tr>
+              <th class="column1">SOFTWARE</th>
+              <th class="column1">FUNCTION</th>
+              <th class="column1">LEVEL</th>
+              <th class="column1">SYSTEM</th>
+              <th class="column5"><a>DOWNLOAD/VISIT:</a></th>a
+            </tr>
+            <tr>
+              <th class="column1">Cura</th>
+              <th class="column234">Slicer, 3D Printer Host</th>
+              <th class="column234">Beginner</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="https://ultimaker.com/en/products/ultimaker-cura-software" target="_blank" rel="nofollow noopener noreferrer" class="column5">Cura</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Matter Control 2.0</th>
+              <th class="column234">Slicer, 3D Printer Host, Design</th>
+              <th class="column234">Beginner</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="https://www.matterhackers.com/store/l/mattercontrol/sk/MKZGTDW6" target="_blank" rel="nofollow noopener noreferrer">MatterControl</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">3DPrinterOS</th>
+              <th class="column234">STL Editor, STL Repair, Slicer, 3D Printer Host</th>
+              <th class="column234">Beginner</th>
+              <th class="column234">Windows, Mac, Ubuntu, Raspberry Pi</th>
+              <th class="column5"><a href="https://www.3dprinteros.com/pricing/" target="_blank" rel="nofollow noopener noreferrer">3DPrinterOS</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">KISSlicer</th>
+              <th class="column234">Slicer</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="http://www.kisslicer.com/download-v16-stable.html" target="_blank" rel="nofollow noopener noreferrer">KISSlicer</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Slic3r</th>
+              <th class="column234">Slicer</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="http://slic3r.org/download" target="_blank" rel="nofollow noopener noreferrer">Slic3r</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">SliceCrafter</th>
+              <th class="column234">Slicer/th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Browser</th>
+              <th class="column5"><a href="http://shapeforge.loria.fr/slicecrafter/" target="_blank" rel="nofollow noopener noreferrer">SliceCrafter</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">IceSL</th>
+              <th class="column234">Slicer, Design</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Linux</th>
+              <th class="column5"><a href="http://shapeforge.loria.fr/icesl/download.php" target="_blank" rel="nofollow noopener noreferrer">IceSL</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">OctoPrint</th>
+              <th class="column234">Slicer, 3D Printer Host</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac, Linux, Raspbian (as OctoPi image)</th>
+              <th class="column5"><a href="https://octoprint.org/download/" target="_blank" rel="nofollow noopener noreferrer">OctoPrint</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Repetier-Host</th>
+              <th class="column234">Slicer, 3D Printer Host</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="http://www.repetier.com/" target="_blank" rel="nofollow noopener noreferrer">Repetier</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">3D-Tool Free Viewer</th>
+              <th class="column234">STL Analysis</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows</th>
+              <th class="column5"><a href="http://www.3d-tool.com/en_free-viewer-download.htm" target="_blank" rel="nofollow noopener noreferrer">3d-Tool Viewer</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">MakePrintable</th>
+              <th class="column234">STL Editor, STL Repair</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Browser</th>
+              <th class="column5"><a href="https://makeprintable.com/" target="_blank" rel="nofollow noopener noreferrer">MakePrintable</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Meshmixer</th>
+              <th class="column234">STL Editor, STL Repair</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac</th>
+              <th class="column5"><a href="http://meshmixer.com/download.html" target="_blank" rel="nofollow noopener noreferrer">Meshmixer</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">MeshLab</th>
+              <th class="column234">STL Editor, STL Repair</th>
+              <th class="column234">Professional</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="http://www.meshlab.net/#download" target="_blank" rel="nofollow noopener noreferrer">MeshLab</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Netfabb</th>
+              <th class="column234">STL Repair, Slicer</th>
+              <th class="column234">Professional</th>
+              <th class="column234">Windows</th>
+              <th class="column5"><a href="https://www.autodesk.com/education/free-software/netfabb-premium" target="_blank" rel="nofollow noopener noreferrer">Netfabb</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">SketchUp Free</th>
+              <th class="column234">Design</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Browser</th>
+              <th class="column5"><a href="https://www.sketchup.com/download" target="_blank" rel="nofollow noopener noreferrer">SketchUp</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">FreeCAD</th>
+              <th class="column234">Design</th>
+              <th class="column234">Intermediate</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="https://freecadweb.org/wiki/Download" target="_blank" rel="nofollow noopener noreferrer">FreeCAD</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">Blender</th>
+              <th class="column234">Design</th>
+              <th class="column234">Professional</th>
+              <th class="column234">Windows, Mac, Linux</th>
+              <th class="column5"><a href="https://www.blender.org/download/" target="_blank" rel="nofollow noopener noreferrer">Blender</a></th>
+            </tr>
+            <tr>
+              <th class=""column1">OnShape</th>
+              <th class="column234">Design</th>
+              <th class="column234">Professional</th>
+              <th class="column234">Browser</th>
+              <th class="column5"><a href="https://www.onshape.com/products/education?" target="_blank" rel="nofollow noopener noreferrer">OnShape</a></th>
+            </tr>
+      </table>
+      </article>
+      <div id="backOverlay" class="overlay"></div>
+  </main>
+
+</body>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="js\main.js"></script>
+</html>
