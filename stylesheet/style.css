@@ -172,3 +172,76 @@ a, a:hover, a:focus {
       opacity: 1;
     }
 }
+/*phần mới thêm*/
+.preface{
+  border-left: solid red;
+  color: lavender;
+  font-style: italic;
+  background-color: gray;
+}
+.heder{
+  color: white;
+  background-color:#252827;
+  margin-left;
+}
+.content2{
+  color: white;
+  background-color: #252827;
+}
+.img1{
+  padding-top:450px;
+  width:100px;
+  height:700px;
+  background: lavender;
+}
+.img2{
+  padding-top:30px;
+  width:100px;
+  height:30 0px;
+  background: lavender;
+}
+.img3{
+  padding-top:10px;
+  width:100px;
+  height:30 0px;
+  background: lavender;
+}
+.text{
+  position:relative;
+  color: gray;
+  background-color: rgba(52, 58, 64, 0.75);
+  border:50px;
+  width:100%;
+}
+#right{
+  width: 100%;
+  min-height: auto;
+  border: 1px solid #CDCDCD;
+}
+.right2{
+  width:15%;
+  min-height: auto;
+}
+.cmtimg{
+  text-align: center;
+  padding:15px;
+}
+table tr{
+  border-bottom: 1px solid #ececec;
+  padding:1rem;
+  font-size:1rem;
+  color:white;
+}
+.column1{
+  font-style: bold;
+  font-size: 1rem;
+  color:white;
+}
+.column234{
+  font-size: 1rem;
+  color:white;
+}
+.column5{
+  font-size: 1rem;
+  color:white;
+}
