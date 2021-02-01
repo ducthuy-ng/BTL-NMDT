@@ -133,6 +133,10 @@ a, a:hover, a:focus {
   width: 100%;
 }
 
+#main_article > * {
+  margin: 1.5rem;
+}
+
 .img_holder {
   display: flex;
   flex-direction: column;
