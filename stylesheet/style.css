@@ -125,10 +125,11 @@ a, a:hover, a:focus {
   position: relative;
   width: calc(100vw - var(--sidebar__width));
   transition: 0.3s ease-in-out;
+  overflow-y: hidden;
 }
 
 #main_article.left {
-  margin-left: 7vw;
+  margin-left: 0vw;
   width: 100%;
 }
 
