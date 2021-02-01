@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Thành tựu - Kiến trúc</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+  <link href="fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet">
+  <link href="stylesheet\style.css" rel="stylesheet">
+</head>
+
+<body onload="documentLoaded()">
+  <header class="trumbotron bg-color">
+    <div class="container py-5 text-center text-light">
+        <h1 class="display-1 mb-0">In ấn 3D</h1>
+        <p class="mb-0"><i>Tất tần tật về công nghệ của tương lai này</i></p>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <div id="top_navbar" class="py-2 px-3 shadow bg-white">
+      <div class="left--controller">
+        <a id="sidebarTogglerShow" class="sidebar--toggler" href="#">
+          <i class="fas fa-list-ol"></i>
+          <span class="py-2 px-3">Mục lục</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <nav id="sidebar" class="aside--show shadow">
+        <div id="sidebarHeader" class="sidebar--header p-2">
+          <a id="sidebarTogglerHide" class="sidebar--toggler p-1" href="#">
+            <i class="fas fa-arrow-left"></i>
+            <span class="py-2">Nội dung</span>
+          </a>
+        </div>
+        <hr />
+
+        <ul class="list-unstyled components sidebar--body pt-3">
+          <li class="">
+              <a href="#overviewSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                Công nghệ in 3D
+              </a>
+                <ul class="collapse list-unstyled" id="overviewSubMenu">
+                    <li class="active">
+                        <a href="overview.html">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="history.html">Lịch sử phát triển</a>
+                    </li>
+                    <li>
+                        <a href="ad&disad.html">Ưu nhược điểm</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="#mechanismSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Nguyên lý hoạt động</a>
+                <ul class="collapse list-unstyled" id="mechanismSubMenu">
+                    <li>
+                        <a href="printer.html">Máy in - phần mềm</a>
+                    </li>
+                    <li>
+                        <a href="material&pr.html">Vật liệu - quy trình</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="">
+                <a href="#applicationSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ứng dụng</a>
+                <ul class="collapse list-unstyled" id="applicationSubMenu">
+                    <li>
+                        <a href="application_production.html">Trong sản xuất <br /> (Ứng dụng lớn nhất)</a>
+                    </li>
+                    <li>
+                        <a href="application_medical.html">Trong y tế</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li class="active">
+                <a href="#achievementSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Thành tựu</a>
+                <ul class="collapse list-unstyled" id="achievementSubmenu">
+                    <li>
+                        <a href="achievement_medical.html">Về y học</a>
+                    </li>
+                    <li class="active">
+                        <a href="achievement_architect.html">Về kiến trúc</a>
+                    </li>
+                    <li class="">
+                        <a href="gom.html">Công nghệ quét quang học 3D </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+      <article id="main_article" class="p-3 article--right">
+        <h1>Giới thiệu</h1>
+        <span class="preface">Công nghệ in 3D là một trong những xu hướng phát triển mạnh mẽ nhất trong thời gian sắp tới của khoa học kỹ thuật. Vậy in 3D là gì và chúng được ứng dụng như thế nào trong cuộc sống hàng ngày, hãy cùng tìm hiểu ngay sau đây...!</span><br>
+        <span>
+        <h2 class="heder">I. Công nghệ in 3D (Công nghệ bồi đắp vật liệu)?</h2>
+        <ol>
+            <li class="content2">Công nghệ in 3D là gì?</li>
+            <br>
+            <img src="quy-trinh-in3d.png">
+            <p class="content2">Quá trình in 3D, còn được gọi là <b>Công nghệ bồi đắp vật liệu (AM)</b>, bao gồm lấy mô hình ba chiều và làm cho nó sẵn sàng để in. Đây là một quá trình nhiều bước bắt đầu bằng một hình thức đặc biệt của mô hình và phần mềm để chia nhỏ mô hình thành các đường đùn nhựa mà máy in có thể sử dụng để tạo đối tượng.<br></br>
+            In 3D là quy trình liên tục trong đó vật liệu được liên kết và làm nguội dưới sự điều khiển của máy tính để tạo ra vật thể ba chiều, với vật liệu được thêm vào với nhau (chẳng hạn như các phân tử lỏng hoặc hạt bột được hợp nhất với nhau). In 3D được sử dụng trong cả tạo mẫu nhanh và sản xuất bù đắp. Các đối tượng có thể có hầu hết đủ mọi hình dạng hoặc hình học và thường được tạo ra bằng cách sử dụng dữ liệu mô hình kỹ thuật số từ mô hình 3D. Có nhiều công nghệ khác nhau, được sử dụng trong quy trình in 3D. Phổ biến nhất theo số lượng người dùng là FDM. Do đó, không giống như vật liệu bị loại bỏ khỏi phôi trong quy trình gia công thông thường, in 3D hoặc sản xuất bù đắp tạo nên một vật thể ba chiều từ mô hình thiết kế hỗ trợ máy tính (CAD), thường bằng cách thêm liên tục từng lớp vật liệu.
+            <p>
+            <li class="content2">Các công nghệ in 3D phổ biến</li>
+            <br>
+            <p class="content2">-Công nghệ SLA: SLA, hay kỹ thuật in lập thể, là một phương pháp in 3D sử dụng tia laser và nhựa thông. Không giống như chiếu ánh sáng kỹ thuật số (DLP), sử dụng màn hình máy chiếu, SLA được phân biệt bằng cách sử dụng một tia laser duy nhất hướng vào các điểm cụ thể để chữa nhựa và làm đông đặc một mẫu. Mẫu 2D đầu tiên trở thành lớp đầu tiên của bản in, thường được treo trên nền tảng xây dựng lộn ngược. Nền tảng này ban đầu nằm trên bề mặt của một bể chứa nhựa và được nâng dần lên khi nhiều lớp hơn được đóng rắn. Vậy nên, với SLA, về cơ bản là đang in 3D lộn ngược. Hầu hết các máy SLA sẽ sử dụng tia UV và nhựa đóng rắn bằng tia UV, điều này làm cho quá trình thiết lập và sau in khó khăn do ánh sáng UV xung quanh. Nhựa thường độc và có thể thải ra hơi độc hại có mùi khó chịu. Tia laser có thể được di chuyển theo một trong hai cách. Cách phổ biến, hiệu quả và tiết kiệm chi phí nhất là sử dụng một bộ gương để phát tia laser trên bề mặt in, nhưng cũng có thể sử dụng một giàn để di chuyển tia laser theo cùng một phương pháp mà đầu nóng được di chuyển trên FDM máy móc.
+            </p><br>
+            <p class="content2">-Công nghệ SLS: SLS là viết tắt của kỹ thuật thiêu kết laser chọn lọc, và là một phương pháp in 3D điển hình hơn trong môi trường công nghiệp. Trong máy SLS, tia laser được sử dụng để nấu chảy, nung chảy hoặc thiêu kết một loại bột với nhau để cuối cùng tạo thành một vật thể. Tia laser trong máy in SLS sẽ khác nhau về công suất, điều này quyết định loại vật liệu mà máy có thể in. Máy in SLS, ngoài việc in nhựa, thường được sử dụng để in với kim loại và gốm sứ. Tuy nhiên, tia laser không có khả năng tạo ra một liên kết hoàn toàn vững chắc trong những vật liệu “kỳ lạ” này, và bộ phận này thường sẽ cần được xử lý thêm trong lò nung trước khi đạt được độ bền hoàn toàn. Vật liệu in cho máy in SLS có dạng bột, và bên trong máy là một thiết bị con lăn liên tục lắng các lớp vật liệu “thô” mới lên trên các lớp vật liệu đã thiêu kết một phần. Một ưu điểm của phương pháp này là không cần thiết bị hỗ trợ in, vì vật liệu không nung xung quanh hoạt động như một giá đỡ trong suốt quá trình in. Kết quả là, các bộ phận có thể phức tạp hơn, cả về cấu trúc hình học và các thành phần lồng vào nhau.
+            </p><br>
+            <p class="content2">
+              -Công nghệ Polyjet: Công nghệ Polyjet là một phương pháp chế tạo bổi đắp hiện đại có khả năng tạo ra các mẫu với bề mặt nhẵn và độ chính xác cao. Với độ dày mỗi lớp in đạt 16 micron và độ chính xác đạt 0.1mm, nó có thể tạo ra các mẫu có các thành mỏng và hình dạng phức tạp với các vật liệu đa dạng.
+            </p><br>
+            <p class="content2">
+              -Công nghệ FDM: Công nghệ FDM tạo ra các mẫu in bằng cách phun từng lớp vật liệu bị nung chảy theo chiều từ dưới lên. FDM là công nghệ in 3D phổ biến nhất hiện nay với điển hình là các dòng máy như máy in 3D Reprap, Makerbot, Printrbot, Flashforge.
+
+            </p>
+        </ol>
+        </span>
+      </article>
+      <div class="right2">
+        <a target=" " href="MakerBot.jpeg">
+          <img src="img/MakerBot.jpeg" class="img1" id="right">
+        </a>
+        <a target=" " href="nguyen-ly-sla.jpeg">
+          <img src="img/nguyen-ly-sla.jpeg" class="img2" id="right">
+        </a>
+        <div class="cmtimg">Nguyên lý SLA</div>
+        <a target=" " href="">
+          <img src="img/sls.png" class="img3" id="right">
+        </a>
+      </div>
+
+      <div id="backOverlay" class="overlay"></div>
+    </div>
+  </main>
+
+</body>
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="js\main.js"></script>
+</html>
