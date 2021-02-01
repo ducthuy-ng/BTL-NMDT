@@ -137,6 +137,10 @@ a, a:hover, a:focus {
   margin: 1.5rem;
 }
 
+#main_article a:hover {
+  color: var(--gray);
+}
+
 .img_holder {
   display: flex;
   flex-direction: column;
