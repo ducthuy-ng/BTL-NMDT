@@ -2,7 +2,7 @@ function sidebar_toggle(event) {
   document.getElementById("sidebar").classList.toggle("active");
   document.getElementById("main_article").classList.toggle("left");
   document.getElementById("backOverlay").classList.toggle("active");
-  event.preventDefault()
+  event.preventDefault();
 }
 
 function documentLoaded() {

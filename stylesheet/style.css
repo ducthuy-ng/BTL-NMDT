@@ -133,6 +133,26 @@ a, a:hover, a:focus {
   width: 100%;
 }
 
+.img_holder {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_holder > img {
+  order: 1;
+  width:400px;
+  margin: 0 auto;
+}
+
+.img_holder > small {
+  order: 2;
+  text-align: center;
+}
+
+.img_holder > small > a {
+  font-style: italic;
+}
+
 .overlay {
     display: none;
     position: absolute;
