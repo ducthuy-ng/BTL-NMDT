@@ -6,7 +6,7 @@
 body {}
 
 header {
-  background: url(https://specials-images.forbesimg.com/imageserve/5f74c36afbc1eb3aba9d44bb/960x0.jpg);
+  background: url('../img/heading_img.png');
   background-size: cover;
   background-position: center;
   height: auto;
