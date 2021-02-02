@@ -1,6 +1,6 @@
 :root {
   --whitesmoke: #F5F5F5;
-  --sidebar__width: calc(15rem + 6vw);
+  --sidebar__width: calc(13rem + 5vw);
   --navbar__height: 2.5rem;
 }
 body {}
@@ -130,6 +130,7 @@ a, a:hover, a:focus {
   width: calc(100vw - var(--sidebar__width));
   transition: 0.3s ease-in-out;
   overflow-y: hidden;
+  text-align: justify;
 }
 
 #main_article.left {
