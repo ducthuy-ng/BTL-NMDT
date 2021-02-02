@@ -11,6 +11,7 @@
 
   <link href="fontawesome-free-5.15.2-web/css/all.min.css" rel="stylesheet">
   <link href="stylesheet\style.css" rel="stylesheet">
+  <link href="stylesheet\printer_table.css" rel="stylesheet">
 </head>
 
 <body onload="documentLoaded()">
@@ -74,6 +75,9 @@
             <li class="">
                 <a href="#applicationSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Ứng dụng</a>
                 <ul class="collapse list-unstyled" id="applicationSubMenu">
+                    <li>
+                      <a href="applicationother.html">Ứng dụng của in 3D</a>
+                    </li>
                     <li>
                         <a href="application_production.html">Trong sản xuất <br /> (Ứng dụng lớn nhất)</a>
                     </li>
@@ -175,139 +179,141 @@
           <h4 class="content2">b) Phần mềm thiết kế ra mô hình 3D</h4>
             <p class="content2">Hầu như tất cả các phần mềm thiết kế mô hình 3D dùng trong cơ khí hoàn toàn đáp ứng được công việc này, chỉ cần có thể xuất ra file STL là có thể sử dụng được. Ví dụ: SolidWork, Inventor, NX, SketchUp,…</p>
             <p class="content2">Có rất nhiều các phần mềm hiện đang được sử dụng, bao gồm cả trả phí và miễn phí. Chúng tôi sẽ liệt kê ra tất cả những phần mềm hỗ trợ quá trình in 3D đồng thời đưa ra một số lời khuyên về các phần mềm nên dùng và nêu ra một số đặc điểm của chúng</p>
-          <table style="width:80%">
+          <table>
+            <thead>
+              <tr class="table-head">
+                <th class="column1">Software</th>
+                <th class="column2">Function</th>
+                <th class="column3">Level</th>
+                <th class="column4">System</th>
+                <th class="column5">Website</th>
+              </tr>
+            </thead>
             <tr>
-              <th class="column1">SOFTWARE</th>
-              <th class="column1">FUNCTION</th>
-              <th class="column1">LEVEL</th>
-              <th class="column1">SYSTEM</th>
-              <th class="column5"><a>DOWNLOAD/VISIT:</a></th>
+              <td class="column1">Cura</td>
+              <td class="column2">Slicer, 3D Printer Host</td>
+              <td class="column3">Beginner</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="https://ultimaker.com/en/products/ultimaker-cura-software" target="_blank" rel="nofollow noopener noreferrer" class="column5">Cura</a></td>
             </tr>
             <tr>
-              <th class="column1">Cura</th>
-              <th class="column234">Slicer, 3D Printer Host</th>
-              <th class="column234">Beginner</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="https://ultimaker.com/en/products/ultimaker-cura-software" target="_blank" rel="nofollow noopener noreferrer" class="column5">Cura</a></th>
+              <td class="column1">Matter Control 2.0</td>
+              <td class="column2">Slicer, 3D Printer Host, Design</td>
+              <td class="column3">Beginner</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="https://www.matterhackers.com/store/l/mattercontrol/sk/MKZGTDW6" target="_blank" rel="nofollow noopener noreferrer">MatterControl</a></td>
             </tr>
             <tr>
-              <th class="column1">Matter Control 2.0</th>
-              <th class="column234">Slicer, 3D Printer Host, Design</th>
-              <th class="column234">Beginner</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="https://www.matterhackers.com/store/l/mattercontrol/sk/MKZGTDW6" target="_blank" rel="nofollow noopener noreferrer">MatterControl</a></th>
+              <td class="column1">3DPrinterOS</td>
+              <td class="column2">STL Editor, STL Repair, Slicer, 3D Printer Host</td>
+              <td class="column3">Beginner</td>
+              <td class="column4">Windows, Mac, Ubuntu, Raspberry Pi</td>
+              <td class="column5"><a href="https://www.3dprinteros.com/pricing/" target="_blank" rel="nofollow noopener noreferrer">3DPrinterOS</a></td>
             </tr>
             <tr>
-              <th class="column1">3DPrinterOS</th>
-              <th class="column234">STL Editor, STL Repair, Slicer, 3D Printer Host</th>
-              <th class="column234">Beginner</th>
-              <th class="column234">Windows, Mac, Ubuntu, Raspberry Pi</th>
-              <th class="column5"><a href="https://www.3dprinteros.com/pricing/" target="_blank" rel="nofollow noopener noreferrer">3DPrinterOS</a></th>
+              <td class="column1">KISSlicer</td>
+              <td class="column2">Slicer</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="http://www.kisslicer.com/download-v16-stable.html" target="_blank" rel="nofollow noopener noreferrer">KISSlicer</a></td>
             </tr>
             <tr>
-              <th class="column1">KISSlicer</th>
-              <th class="column234">Slicer</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="http://www.kisslicer.com/download-v16-stable.html" target="_blank" rel="nofollow noopener noreferrer">KISSlicer</a></th>
+              <td class="column1">Slic3r</td>
+              <td class="column2">Slicer</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="http://slic3r.org/download" target="_blank" rel="nofollow noopener noreferrer">Slic3r</a></td>
             </tr>
             <tr>
-              <th class="column1">Slic3r</th>
-              <th class="column234">Slicer</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="http://slic3r.org/download" target="_blank" rel="nofollow noopener noreferrer">Slic3r</a></th>
+              <td class="column1">SliceCrafter</td>
+              <td class="column2">Slicer</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Browser</td>
+              <td class="column5"><a href="http://shapeforge.loria.fr/slicecrafter/" target="_blank" rel="nofollow noopener noreferrer">SliceCrafter</a></td>
             </tr>
             <tr>
-              <th class="column1">SliceCrafter</th>
-              <th class="column234">Slicer/th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Browser</th>
-              <th class="column5"><a href="http://shapeforge.loria.fr/slicecrafter/" target="_blank" rel="nofollow noopener noreferrer">SliceCrafter</a></th>
+              <td class="column1">IceSL</td>
+              <td class="column2">Slicer, Design</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Linux</td>
+              <td class="column5"><a href="http://shapeforge.loria.fr/icesl/download.php" target="_blank" rel="nofollow noopener noreferrer">IceSL</a></td>
             </tr>
             <tr>
-              <th class="column1">IceSL</th>
-              <th class="column234">Slicer, Design</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Linux</th>
-              <th class="column5"><a href="http://shapeforge.loria.fr/icesl/download.php" target="_blank" rel="nofollow noopener noreferrer">IceSL</a></th>
+              <td class="column1">OctoPrint</td>
+              <td class="column2">Slicer, 3D Printer Host</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac, Linux, Raspbian (as OctoPi image)</td>
+              <td class="column5"><a href="https://octoprint.org/download/" target="_blank" rel="nofollow noopener noreferrer">OctoPrint</a></td>
             </tr>
             <tr>
-              <th class="column1">OctoPrint</th>
-              <th class="column234">Slicer, 3D Printer Host</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac, Linux, Raspbian (as OctoPi image)</th>
-              <th class="column5"><a href="https://octoprint.org/download/" target="_blank" rel="nofollow noopener noreferrer">OctoPrint</a></th>
+              <td class="column1">Repetier-Host</td>
+              <td class="column2">Slicer, 3D Printer Host</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="http://www.repetier.com/" target="_blank" rel="nofollow noopener noreferrer">Repetier</a></td>
             </tr>
             <tr>
-              <th class="column1">Repetier-Host</th>
-              <th class="column234">Slicer, 3D Printer Host</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="http://www.repetier.com/" target="_blank" rel="nofollow noopener noreferrer">Repetier</a></th>
+              <td class="column1">3D-Tool Free Viewer</td>
+              <td class="column2">STL Analysis</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows</td>
+              <td class="column5"><a href="http://www.3d-tool.com/en_free-viewer-download.htm" target="_blank" rel="nofollow noopener noreferrer">3d-Tool Viewer</a></td>
             </tr>
             <tr>
-              <th class="column1">3D-Tool Free Viewer</th>
-              <th class="column234">STL Analysis</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows</th>
-              <th class="column5"><a href="http://www.3d-tool.com/en_free-viewer-download.htm" target="_blank" rel="nofollow noopener noreferrer">3d-Tool Viewer</a></th>
+              <td class="column1">MakePrintable</td>
+              <td class="column2">STL Editor, STL Repair</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Browser</td>
+              <td class="column5"><a href="https://makeprintable.com/" target="_blank" rel="nofollow noopener noreferrer">MakePrintable</a></td>
             </tr>
             <tr>
-              <th class="column1">MakePrintable</th>
-              <th class="column234">STL Editor, STL Repair</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Browser</th>
-              <th class="column5"><a href="https://makeprintable.com/" target="_blank" rel="nofollow noopener noreferrer">MakePrintable</a></th>
+              <td class="column1">Meshmixer</td>
+              <td class="column2">STL Editor, STL Repair</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac</td>
+              <td class="column5"><a href="http://meshmixer.com/download.html" target="_blank" rel="nofollow noopener noreferrer">Meshmixer</a></td>
             </tr>
             <tr>
-              <th class="column1">Meshmixer</th>
-              <th class="column234">STL Editor, STL Repair</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac</th>
-              <th class="column5"><a href="http://meshmixer.com/download.html" target="_blank" rel="nofollow noopener noreferrer">Meshmixer</a></th>
+              <td class="column1">MeshLab</td>
+              <td class="column2">STL Editor, STL Repair</td>
+              <td class="column3">Professional</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="http://www.meshlab.net/#download" target="_blank" rel="nofollow noopener noreferrer">MeshLab</a></td>
             </tr>
             <tr>
-              <th class="column1">MeshLab</th>
-              <th class="column234">STL Editor, STL Repair</th>
-              <th class="column234">Professional</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="http://www.meshlab.net/#download" target="_blank" rel="nofollow noopener noreferrer">MeshLab</a></th>
+              <td class="column1">Netfabb</td>
+              <td class="column2">STL Repair, Slicer</td>
+              <td class="column3">Professional</td>
+              <td class="column4">Windows</td>
+              <td class="column5"><a href="https://www.autodesk.com/education/free-software/netfabb-premium" target="_blank" rel="nofollow noopener noreferrer">Netfabb</a></td>
             </tr>
             <tr>
-              <th class="column1">Netfabb</th>
-              <th class="column234">STL Repair, Slicer</th>
-              <th class="column234">Professional</th>
-              <th class="column234">Windows</th>
-              <th class="column5"><a href="https://www.autodesk.com/education/free-software/netfabb-premium" target="_blank" rel="nofollow noopener noreferrer">Netfabb</a></th>
+              <td class="column1">SketchUp Free</td>
+              <td class="column2">Design</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Browser</td>
+              <td class="column5"><a href="https://www.sketchup.com/download" target="_blank" rel="nofollow noopener noreferrer">SketchUp</a></td>
             </tr>
             <tr>
-              <th class="column1">SketchUp Free</th>
-              <th class="column234">Design</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Browser</th>
-              <th class="column5"><a href="https://www.sketchup.com/download" target="_blank" rel="nofollow noopener noreferrer">SketchUp</a></th>
+              <td class="column1">FreeCAD</td>
+              <td class="column2">Design</td>
+              <td class="column3">Intermediate</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="https://freecadweb.org/wiki/Download" target="_blank" rel="nofollow noopener noreferrer">FreeCAD</a></td>
             </tr>
             <tr>
-              <th class="column1">FreeCAD</th>
-              <th class="column234">Design</th>
-              <th class="column234">Intermediate</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="https://freecadweb.org/wiki/Download" target="_blank" rel="nofollow noopener noreferrer">FreeCAD</a></th>
+              <td class="column1">Blender</td>
+              <td class="column2">Design</td>
+              <td class="column3">Professional</td>
+              <td class="column4">Windows, Mac, Linux</td>
+              <td class="column5"><a href="https://www.blender.org/download/" target="_blank" rel="nofollow noopener noreferrer">Blender</a></td>
             </tr>
             <tr>
-              <th class="column1">Blender</th>
-              <th class="column234">Design</th>
-              <th class="column234">Professional</th>
-              <th class="column234">Windows, Mac, Linux</th>
-              <th class="column5"><a href="https://www.blender.org/download/" target="_blank" rel="nofollow noopener noreferrer">Blender</a></th>
-            </tr>
-            <tr>
-              <th class="column1">OnShape</th>
-              <th class="column234">Design</th>
-              <th class="column234">Professional</th>
-              <th class="column234">Browser</th>
-              <th class="column5"><a href="https://www.onshape.com/products/education?" target="_blank" rel="nofollow noopener noreferrer">OnShape</a></th>
+              <td class="column1">OnShape</td>
+              <td class="column2">Design</td>
+              <td class="column3">Professional</td>
+              <td class="column4">Browser</td>
+              <td class="column5"><a href="https://www.onshape.com/products/education?" target="_blank" rel="nofollow noopener noreferrer">OnShape</a></td>
             </tr>
       </table>
       </article>
